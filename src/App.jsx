@@ -1,10 +1,12 @@
 import './App.css';
+import { ToDoApp } from './container/ToDoApp';
 
 function App() {
   return (
     <div className="App">
-      
-    <h1> TODO APP MTFK - #1</h1>
+
+      <ToDoApp/>
+
     </div>
   );
 }
