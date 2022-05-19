@@ -12,9 +12,11 @@ export const ShowTodo = ({ todoValue, setTodoValue }) => {
             {
                 todoValue.map((element, index)=>  {
                     return (
-                        <li key={element}>
-                            {element}
-                            <DeleteInput index = {index} setTodoValue={setTodoValue}/> 
+                        <li key={index}>
+                            <p>{element}</p>
+                            <DeleteInput index = {element} 
+                            setTodoValue={setTodoValue} 
+                            todoValue={todoValue}/>
                         </li>
                     )
                 })
