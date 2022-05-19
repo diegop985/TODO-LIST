@@ -18,7 +18,7 @@ export const ToDoApp = () => {
         <h1>ToDoApp - 1</h1>
         <div className='todo-container'>
           <InputTodo setTodoValue={setTodoValue}/>
-          <ShowTodo className="todo-form" todoValue={todoValue}/>
+          <ShowTodo className="todo-form" todoValue={todoValue} setTodoValue={setTodoValue}/>
         </div>
 
 

@@ -13,7 +13,7 @@ export const InputTodo = ({setTodoValue}) => {
     const handleSubmitChange = (e) => {
         e.preventDefault()
 
-        if( queryValue.trim().length > 1 ) {
+        if( queryValue.trim().length >=1 ) {
             setTodoValue( todoValue => [queryValue, ...todoValue])
             setQueryValue("")
 
