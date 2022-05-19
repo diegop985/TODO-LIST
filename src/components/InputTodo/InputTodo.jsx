@@ -14,16 +14,13 @@ export const InputTodo = ({setTodoValue}) => {
         e.preventDefault()
 
         if( queryValue.trim().length >=1 ) {
-            setTodoValue( todoValue => [queryValue, ...todoValue])
+            setTodoValue( todoValue => [ ...todoValue, queryValue])
             setQueryValue("")
 
         }
 
         
     }
-
-
-
 
     return (
         <>

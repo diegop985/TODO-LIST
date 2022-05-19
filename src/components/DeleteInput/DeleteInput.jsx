@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 
 
 
-export const DeleteInput = ({element}) => {
+export const DeleteInput = ({index, setTodoValue}) => {
 
-    let ele = element
     
-    const borrarElemento = (elemento) => {
-        console.log(ele)
-    }
+    const borrarElemento = () => {
+        
+        setTodoValue(todoValue => [todoValue.splice(index,1), ...todoValue] )
 
+    }
 
     return (
 

@@ -10,10 +10,14 @@ export const ShowTodo = ({ todoValue, setTodoValue }) => {
     <div>
         <ul>
             {
-                todoValue.map(element => <li key={element}>
-                    {element}
-                    <DeleteInput element = {element}/> 
-                </li>)
+                todoValue.map((element, index)=>  {
+                    return (
+                        <li key={element}>
+                            {element}
+                            <DeleteInput index = {index} setTodoValue={setTodoValue}/> 
+                        </li>
+                    )
+                })
             }
         </ul>
     </div>
